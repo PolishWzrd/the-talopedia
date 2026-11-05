@@ -30,7 +30,8 @@ export const ACCOUNT_OF = {
   demaruz: 'demaruzipatriot',
   sehreno: 'Wrangel-png',
   sylesyjo: 'Maciejosss',
-  zephran: 'Zephran',
+  zephran: 'PolishWzrd',
+  perovska: 'El-Prinz',
 };
 
 /**

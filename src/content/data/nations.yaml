@@ -35,7 +35,7 @@
 - { id: guandong, name: Guandong, adjective: Guandongese, continent: Valtheria, flag: /assets/flags/guandong.png }
 - { id: perovska, name: Perovska, adjective: Perovskan, continent: Valtheria, flag: /assets/flags/perovska.png }
 - { id: seignid, name: Seignid, adjective: Seignidian, continent: Valtheria, flag: /assets/flags/seignid.png }
-- { id: zephran, name: Zephran, continent: Valtheria, flag: /assets/flags/zephran.png }
+- { id: zephran, name: Zephran, adjective: Zephran, continent: Valtheria, flag: /assets/flags/zephran.png }
 
 - { id: auritania, name: Auritania, adjective: Auritanian, continent: Elysia, portal: true, flag: /assets/flags/auritania.png }
 - { id: esu, name: E.S.U., adjective: Elysian, continent: Elysia, portal: true, flag: /assets/flags/esu.png }

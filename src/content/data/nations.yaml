@@ -37,6 +37,7 @@
 - { id: seignid, name: Seignid, adjective: Seignidian, continent: Valtheria, flag: /assets/flags/seignid.png }
 - { id: zephran, name: Zephran, adjective: Zephran, continent: Valtheria, flag: /assets/flags/zephran.png }
 
+- { id: antiqa, name: Antiqa, adjective: Antiqan, continent: Elysia, flag: /assets/flags/antiqa.png }
 - { id: auritania, name: Auritania, adjective: Auritanian, continent: Elysia, portal: true, flag: /assets/flags/auritania.png }
 - { id: esu, name: E.S.U., adjective: Elysian, continent: Elysia, portal: true, flag: /assets/flags/esu.png }
 - { id: hollosend, name: Hollosend, adjective: Hollosendian, continent: Elysia, flag: /assets/flags/hollosend.png }

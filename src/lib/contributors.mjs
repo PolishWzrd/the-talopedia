@@ -32,6 +32,7 @@ export const ACCOUNT_OF = {
   sylesyjo: 'Maciejosss',
   zephran: 'PolishWzrd',
   perovska: 'El-Prinz',
+  antiqa: 'cornafiable',
 };
 
 /**

@@ -55,13 +55,13 @@ infobox:
   - { label: "Alpha-3 Code", value: "PER" }
 ---
 
-The Governorate-Generalship of Perovska (Russian: Генерал-Губернаторство Перовска, General-Gubernatorstvo Perovska; unofficial Cortesian: Gubernatorstwo Generalne Perowskiej) is a country situated in Valtheria, occupying an area of 1,657,722 km². It is bounded by Rudania to the west, Giathka to the south, and the Himalayan Ocean to the east. Its northern frontier follows the former colonial boundary. The country has an official population of 34,274,000, although the accuracy of this figure is uncertain owing to the absence of recent censuses in several frontier districts. The capital and largest city is Kyakhta, with a population of approximately 2,350,000.
+The Governorate-Generalship of Perovska (Russian: Генерал-Губернаторство Перовска, General-Gubernatorstvo Perovska; unofficial Cortesian: Gubernatorstwo Generalne Perowskiej) is a country situated in [[valtheria]], occupying an area of 1,657,722 km². It is bounded by [[rudania]] to the west, [[giathka]] to the south, and the Himalayan Ocean to the east. Its northern frontier follows the former colonial boundary. The country has an official population of 34,274,000, although the accuracy of this figure is uncertain owing to the absence of recent censuses in several frontier districts. The capital and largest city is Kyakhta, with a population of approximately 2,350,000.
 
 Perovska was established as a Rudanian colonial administration in 1873. Following the conclusion of the Rudanian Civil War in 1920, the territory became the principal refuge of the defeated White movement, receiving large numbers of military personnel, their families, merchants, and civilian immigrants. The present administration is headed by a Governor-General and governed through the Perovsky General Staff. Although nominally an extension of the former imperial colonial administration, Perovska exercises de facto independence from Rudania and maintains its own military, currency, and administrative institutions.
 
 ## Etymology
 
-The name Perovska derives from General Perovsky, a Rudanian military officer of Cortesian ancestry responsible for establishing the original colonial administrative district in 1873. The name was subsequently extended to the entire territory by the present Governor-General.
+The name Perovska derives from General Perovsky, a Rudanian military officer of [[cortesia|Cortesian]] ancestry responsible for establishing the original colonial administrative district in 1873. The name was subsequently extended to the entire territory by the present Governor-General.
 
 The adoption of the historical designation was intended to preserve continuity with the former Rudanian imperial administration and reinforce the legitimacy of Perovska's claims to the institutions and territories of the former empire. Official communications frequently describe the present administration as the successor to the original colonial undertaking, a position which may facilitate future territorial and diplomatic claims against the People's Republic of Rudania.
 
@@ -73,9 +73,9 @@ The early colonial administration was largely military in character. Numerous of
 
 The colonial administration also permitted the settlement of certain political prisoners, who were granted rights to acquire land and, in some instances, participate in local government by executive decree of the General-Governor. These policies, unusual among contemporary colonial administrations, contributed to the development of a relatively independent merchant and landed class.
 
-During the Rudanian Civil War, a native revolt spread throughout the territory, motivated principally by ethnic and religious grievances. The various insurgent formations, frequently organized under local *kurbashis*, proved unable to establish a unified administration. Their activities were increasingly characterized by plundering and the seizure of property, and they were eventually defeated by the remaining colonial military authorities.
+During the Rudanian Civil War, a native revolt spread throughout the territory, motivated principally by ethnic and religious grievances. The various insurgent formations, frequently organized under local [kurbashis](https://en.wikipedia.org/wiki/Chorbaji), proved unable to establish a unified administration. Their activities were increasingly characterized by plundering and the seizure of property, and they were eventually defeated by the remaining colonial military authorities.
 
-Following the defeat of the White armies in the Rudanian mainland, Perovska became an important refuge for the remnants of the imperial military establishment. The principal withdrawal took place in 1920, bringing with it considerable numbers of officers, soldiers, their families, merchants, and civilian refugees. The desert frontier provided a natural obstacle against the advancing revolutionary forces, and an unofficial armistice subsequently developed between the opposing administrations.
+Following the defeat of the White armies in the Rudanian mainland, Perovska became an important refuge for the remnants of the imperial military establishment. The [principal withdrawal](https://en.wikipedia.org/wiki/Great_Siberian_Ice_March) took place in 1920, bringing with it considerable numbers of officers, soldiers, their families, merchants, and civilian refugees. The desert frontier provided a natural obstacle against the advancing revolutionary forces, and an unofficial armistice subsequently developed between the opposing administrations.
 
 The Governorate-Generalship was reorganized under Major General Dmitri Mikhailovich Skobelev, who assumed the office of Governor-General following an election among the remaining military electorate. The administration retained the colonial institutions while establishing an independent military command and currency. Since then, the General Staff has concentrated its efforts on the consolidation of the territory, the suppression of remaining insurgent movements, and the development of the country's economic and military infrastructure.
 
@@ -85,9 +85,7 @@ The Governorate-Generalship is governed by the All-Perovsky General Staff, which
 
 The General Staff exercises direct authority over the armed forces and maintains considerable influence over civilian administration. A rudimentary legislative assembly and an independent judiciary exist for the administration of ordinary civilian affairs, although their jurisdiction is restricted in territories designated as being under direct military control.
 
-The Transitory Council serves as an advisory institution and is intended to form the basis of a future civilian government, within it exists the Independent Department for Civil Affairs which acts as the precursor for the future judiciary. It exercises its authority principally in the larger urban settlements, however, certain judicial proceedings
-
-may be transferred to special military tribunals by order of the General Staff.
+The Transitory Council serves as an advisory institution and is intended to form the basis of a future civilian government, within it exists the Independent Department for Civil Affairs which acts as the precursor for the future judiciary. It exercises its authority principally in the larger urban settlements, however, certain judicial proceedings may be transferred to special military tribunals by order of the General Staff.
 
 The country is divided into eight military districts plus the capital's Special District, which constitute its principal territorial administrative divisions:
 
@@ -122,13 +120,13 @@ Tribal irregular militias constitute a further 12 regiments, numbering approxima
 
 The administration maintains additional reserves, with a statutory peacetime establishment not exceeding 2% of the total population and a wartime mobilization capacity estimated at between 8 and 10%. The latter represents approximately 2.74 to 3.43 million persons.
 
-The Perovsky Air Corps constitutes the country's air arm, while the Perovsky Coastal Flotilla is responsible for maritime defence. Both remain comparatively underdeveloped and are heavily influenced by Nichirin, which provides military advisors and maintains extensive basing rights in return for the protection of Perovskan maritime approaches against piracy and foreign violations. A total of 36 modern biplanes purchased from Nichirin constitute the basis of the Air Corps. The Perovsky Coastal Flotilla is comprised of 4 auxiliary cruisers, ex-merchant vessels converted and armed for military service as well as 9 torpedo boats.
+The Perovsky Air Corps constitutes the country's air arm, while the Perovsky Coastal Flotilla is responsible for maritime defence. Both remain comparatively underdeveloped and are heavily influenced by Nichirin, which provides military advisors and maintains extensive basing rights in return for the protection of Perovskan maritime approaches against piracy and foreign violations. A total of 36 modern biplanes purchased from Nichirin constitute the basis of the Air Corps. The Perovsky Coastal Flotilla is comprised of 4 [auxiliary cruisers](https://en.wikipedia.org/wiki/Armed_merchantman), ex-merchant vessels converted and armed for military service as well as 9 torpedo boats.
 
 The military administration is hampered by the enormous area of the country and the inadequacy of its communications infrastructure. District commanders frequently exercise considerable operational independence, reporting to the Central General Staff and receiving new standing orders at intervals of approximately four to six months. Telegraphic communications with the northern Ataman formations are particularly unreliable.
 
 The northern frontier is presently occupied by the 1st and 2nd Ataman Corps, whose commanders have conducted repeated punitive expeditions against suspected revolutionary remnants and nomadic bands. The General Staff has encountered increasing difficulties in maintaining control over these formations, whose operations frequently extend beyond their assigned areas.
 
-In the south, military operations are directed against the continuing Karakozli revolt, a recent result of which has been the impromptu re-mobilization of the so-called Gray Army, also known as the Thousand Banner Army by an independent movement of officers. The latter consists largely of loyalist native formations and seeks to establish order along the frontier, the lack of which is blamed on the local administration, with certain extremist elements advocating an advance into Giathka.
+In the south, military operations are directed against the continuing [Karakozli revolt](https://en.wikipedia.org/wiki/Basmachi_movement), a recent result of which has been the impromptu re-mobilization of the so-called Gray Army, also known as the Thousand Banner Army by an independent movement of officers. The latter consists largely of loyalist native formations and seeks to establish order along the frontier, the lack of which is blamed on the local administration, with certain extremist elements advocating an advance into Giathka.
 
 ## Economy
 
@@ -196,7 +194,7 @@ The Kalmyks constitute another important element of the northern and central pop
 
 Rudanians arrived throughout the colonial period as merchants, administrators, settlers, and political exiles. Their numbers increased considerably following the Civil War, when military personnel and civilian refugees accompanying the White armies settled throughout the territory.
 
-The Karakozli constitute the principal indigenous population throughout Perovska and especially of the southern districts. They are predominantly nomadic or semi-nomadic and retain traditional tribal institutions under the authority of local *beks* and other hereditary leaders. Their proportion of the population increases towards the Giathka frontier, where the combined Cortesian-Kalmyk-Rudanian population falls to approximately 40%.
+The [Karakozli](https://en.wikipedia.org/wiki/Turkmens) constitute the principal indigenous population throughout Perovska and especially of the southern districts. They are predominantly nomadic or semi-nomadic and retain traditional tribal institutions under the authority of local *beks* and other hereditary leaders. Their proportion of the population increases towards the Giathka frontier, where the combined Cortesian-Kalmyk-Rudanian population falls to approximately 40%.
 
 ### Languages
 
@@ -206,9 +204,9 @@ Sarmacki, a dialect of Cortesian, is widely spoken among the Cortesian-descended
 
 ### Religion
 
-Nazarism is the predominant religion among the Cortesian-descended, Kalmyk, and Rudanian populations, particularly Sorovite Nazarism. It retains considerable influence within the military establishment and the principal urban settlements.
+[Nazarism](https://en.wikipedia.org/wiki/Christianity) is the predominant religion among the Cortesian-descended, Kalmyk, and Rudanian populations, particularly [Sorovite Nazarism](https://en.wikipedia.org/wiki/Eastern_Orthodoxy). It retains considerable influence within the military establishment and the principal urban settlements.
 
-Shahadism is the principal religion of the Karakozli population, particularly in the southern districts. Religious institutions remain closely connected with the traditional tribal and aristocratic structures of the region.
+[Shahadism](https://en.wikipedia.org/wiki/Islam) is the principal religion of the Karakozli population, particularly in the southern districts. Religious institutions remain closely connected with the traditional tribal and aristocratic structures of the region.
 
 A number of Karakozli have converted to Nazarism as part of the "civilizing mission" of the earlier colonial administration, with many having since entered the service of the administration. Such converts constitute an important element of the Honor Guard Corps, an elite formation responsible for the protection of the General Staff and its principal garrison in Kyakhta.
 

@@ -33,6 +33,7 @@ export const ACCOUNT_OF = {
   zephran: 'PolishWzrd',
   perovska: 'El-Prinz',
   antiqa: 'cornafiable',
+  carestur: 'vlxq2',
 };
 
 /**

@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { url, coordsFor, nation, mapUrl, navbox } from '../../lib/registry.mjs';
+import { asset } from '../../lib/inline.mjs';
 import { resolveHtml, renderNavbox } from '../../lib/navbox.mjs';
 import { colourOf, inkOn } from '../../lib/flag-colour.mjs';
 
@@ -14,7 +15,9 @@ export async function getStaticPaths() {
       entry,
       // The nation's own overview opens the portal, so the paragraph is written once
       // and read in both places. A nation with no overview yet keeps its portal's text.
-      overview: articles.find((a) => a.data.type === 'overview' && a.data.nation === entry.data.nation),
+      // The article at the nation's own address wins if a second overview turns up.
+      overview: articles.find((a) => a.id === entry.data.nation && a.data.type === 'overview')
+        ?? articles.find((a) => a.data.type === 'overview' && a.data.nation === entry.data.nation),
     },
   }));
 }
@@ -35,7 +38,7 @@ const coords = found && { ...found, href: found.type === 'nation' ? mapUrl(natio
   editSlug={hasNavbox ? `navbox:${d.nation}` : `portal:${entry.id}`}
   editLabel={hasNavbox ? 'Edit navbox' : 'Edit'}>
   {d.welcome && <p class="portal-welcome" style={bar ? `background:${bar};color:${inkOn(bar)}` : undefined}>{d.welcome}</p>}
-  {d.banner && <img class="portal-banner" src={url(d.banner)} alt={d.title} />}
+  {d.banner && <img class="portal-banner" src={asset(d.banner)} alt={d.title} />}
   <div class="portal-lede article">
     {lede && <Fragment set:html={lede} />}
     {own && <Fragment set:html={own} />}

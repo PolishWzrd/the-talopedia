@@ -35,10 +35,14 @@ function scanArticles() {
   return out;
 }
 
+// A nation has a portal when its portal file exists. Kept as a flag in nations.yaml it went
+// stale whenever the wiki editor made a portal, since the editor cannot touch that file.
 function scanNations() {
   const f = path.join(ROOT, 'data/nations.yaml');
   if (!fs.existsSync(f)) return [];
-  return parseYaml(fs.readFileSync(f, 'utf8')) || [];
+  return (parseYaml(fs.readFileSync(f, 'utf8')) || []).map((n) => ({
+    ...n, portal: fs.existsSync(path.join(ROOT, 'portals', n.id + '.md')),
+  }));
 }
 
 function load() {

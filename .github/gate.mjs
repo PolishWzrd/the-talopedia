@@ -27,10 +27,15 @@ const show = (ref, path) => {
 
 /** Everything the editor writes: a page, a navbox, and an image. Nothing else is a
     thing a contributor can produce, so nothing else merges on its own. */
-const PAGE = /^src\/content\/(articles|portals)\/[^/]+\.md$/;
-const ARTICLE = /^src\/content\/articles\/[^/]+\.md$/;
-const NAVBOX = /^src\/content\/data\/navboxes\/([^/]+)\.yaml$/;
+// A page's file name is its address, which is written into links across the site, so it
+// is held to what the editor itself makes of a title: letters, digits and hyphens.
+const PAGE = /^src\/content\/(articles|portals)\/[a-z0-9][a-z0-9-]*\.md$/;
+const ARTICLE = /^src\/content\/articles\/[a-z0-9][a-z0-9-]*\.md$/;
+const NAVBOX = /^src\/content\/data\/navboxes\/([a-z0-9][a-z0-9-]*)\.yaml$/;
 const ASSET = /^public\/assets\/./;
+// Only a picture. An .html, .svg or .js file here would be served from the same site as
+// the editor, where a script in it could read the GitHub token every writer keeps there.
+const PICTURE = /\.(png|jpe?g|webp|gif)$/i;
 const writable = (p) => PAGE.test(p) || NAVBOX.test(p);
 
 /**
@@ -107,6 +112,7 @@ for (const line of changed) {
   // deleting one is how another nation's flag would go missing, so that is reviewed;
   // and a branch from an old fork calls a picture added since "new", so main decides.
   if (added && ASSET.test(to)) {
+    if (!PICTURE.test(to)) decline(`${to} is not a picture.`);
     if (show(BASE, to) == null) continue;
     decline(`${to} would replace a picture already on main.`);
   }

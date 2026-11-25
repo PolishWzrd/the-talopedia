@@ -15,21 +15,26 @@ const ARROW = {
  */
 export const asset = (p) => {
   const whole = p.replace(/&(?:amp;|#x26;|#38;)/gi, '&');
-  return /^(https?:)?\/\//i.test(whole) ? whole : url(p);
+  // A picture's address is written into attributes, some of them unescaped. A quote or a
+  // bracket in one is never part of a real address, so it is encoded where it could close
+  // the attribute, and an address that would run code is no picture at all.
+  if (/^(?:javascript|vbscript|data:text\/html)/i.test(whole.replace(/[\s\u0000-\u001f]+/g, ''))) return '';
+  const safe = (s) => s.replace(/["'<>`]/g, (c) => '%' + c.charCodeAt(0).toString(16).toUpperCase());
+  return safe(/^(https?:)?\/\//i.test(whole) ? whole : url(p));
 };
 
 export function icon(slug) {
   const src = iconFor(slug);
   // An emblem from the icons folder goes without the hairline a flag gets, as an :img of one does.
   const sym = src?.startsWith('/assets/icons/') ? ' sym' : '';
-  return src ? `<img class="ico${sym}" src="${url(src)}" alt="" loading="lazy">` : '';
+  return src ? `<img class="ico${sym}" src="${esc(asset(src))}" alt="" loading="lazy">` : '';
 }
 
 export function link(slug, display) {
   const href = hrefOf(slug);
   const text = esc(display || titleFor(slug));
   const missing = !exists(slug) ? ' new' : '';
-  return `<a class="wl${missing}" href="${href}">${text}</a>`;
+  return `<a class="wl${missing}" href="${esc(href)}">${text}</a>`;
 }
 
 // Custom syntax shared by article bodies, infobox values, navboxes and tables.

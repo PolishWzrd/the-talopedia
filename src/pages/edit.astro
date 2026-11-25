@@ -351,7 +351,7 @@ const ADMIN = REPO.split('/')[0];
         <div class="pp-row" id="banner-field" hidden>
           <span class="pp-k">Banner</span>
           <span class="pp-v f-with-btn">
-            <input id="f-banner" class="path" type="text" placeholder="/assets/media/nichirin-portal-banner.jpg" />
+            <input id="f-banner" class="path" type="text" placeholder="Paste an image link, or Choose" />
             <button id="f-banner-pick" class="pp-btn" type="button">Choose</button>
           </span>
         </div>
@@ -492,7 +492,9 @@ const ADMIN = REPO.split('/')[0];
     const $ = (s, r = document) => r.querySelector(s);
     const el = (t, c, txt) => { const n = document.createElement(t); if (c) n.className = c; if (txt != null) n.textContent = txt; return n; };
     const q = (s) => '"' + String(s ?? '').replace(/\\/g, '\\\\').replace(/"/g, '\\"') + '"';
-    const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    // Quotes too: every caller puts this inside an attribute somewhere, and a page that
+    // closed one could run code in the tab holding the writer's GitHub token.
+    const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
     // What is open: an article, a nation portal, or a navbox. Each lives in its own
     // directory and writes a different file, and a portal and a navbox both share
@@ -583,9 +585,13 @@ const ADMIN = REPO.split('/')[0];
         : (ICONS[arg] || '').startsWith('/assets/icons/');
       const sym = bare ? ' sym' : '';
       const style = size > 0 ? ` style="width:${size}px;height:auto"` : '';
+      // The argument arrives escaped from the markdown and raw from a token already on the
+      // page, so only what could close the attribute or open a tag is touched here: a path
+      // written as x" onerror="... would otherwise run in the tab that holds the token.
+      const lite = (s) => String(s).replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
       return src
-        ? `<img class="tok ico${size > 0 ? ' sized' : ''}${sym}" data-tok="${kind}" data-slug="${esc(arg)}" src="${src}"${style} alt="" contenteditable="false">`
-        : `<span class="tok missing" data-tok="${kind}" data-slug="${esc(arg)}" contenteditable="false">:${kind}[${arg}]</span>`;
+        ? `<img class="tok ico${size > 0 ? ' sized' : ''}${sym}" data-tok="${kind}" data-slug="${esc(arg)}" src="${lite(src)}"${style} alt="" contenteditable="false">`
+        : `<span class="tok missing" data-tok="${kind}" data-slug="${esc(arg)}" contenteditable="false">:${kind}[${lite(arg)}]</span>`;
     }
 
     /* ---------- markdown <-> editable html ---------- */
@@ -4530,7 +4536,7 @@ const ADMIN = REPO.split('/')[0];
       const id = $('#f-nation').value;
       if (id) location.href = `${BASE.replace(/\/$/, '')}/edit?a=navbox:${id}`;
     };
-    $('#f-banner-pick').onclick = () => { $('#f-banner').focus(); openMedia(); };
+    $('#f-banner-pick').onclick = (e) => { e.stopPropagation(); openFor($('#f-banner')); };
     ['#f-type', '#f-nation', '#f-navbox-on', '#f-sidebar-on'].forEach((id) => {
       $(id).addEventListener('change', paintSettings);
     });
